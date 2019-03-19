@@ -1,0 +1,17 @@
+/system
+/.htaccess
+/index.php
+
+/application/cache
+/application/config
+/application/core
+/application/helpers
+/application/hooks
+/application/language
+/application/libreries
+/application/logs
+/application/third_party
+/application/index.html
+/application/*/index.html
+/appliation/views/errors/index.html
+/appliation/views/errors/*/index.html
