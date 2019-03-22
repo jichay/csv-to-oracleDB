@@ -15,13 +15,14 @@ class Evolution extends CI_Controller {
 		// $myObj->smp[0] = new stdClass();
 		// $myObj->smp[0]->city = "Test";
 		// $myJSON = json_encode($myObj);
-		
+		$this->load->model("ec");
 		//return $this->ok($myJSON); //Not a global function so need to add $this
-		$query = $this->db->query('SELECT * FROM tutorat');
-
+		$query = $this->db->query('SELECT * FROM ec FETCH NEXT 10 ROWS ONLY');
+		$ec = New Ec();
 		foreach ($query->result() as $row)
 		{
-		        var_dump($row);
+		        $ec->setData($row);
+		        echo $ec->idEc."<br>";
 		}
 	}
 	public function ok($content)

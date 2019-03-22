@@ -7,5 +7,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title><?php echo $title; ?></title>
 </head>
 <body>
-</body>
-</html>
+	
