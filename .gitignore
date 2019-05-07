@@ -15,3 +15,4 @@
 /application/*/index.html
 /appliation/views/errors/index.html
 /appliation/views/errors/*/index.html
+/uploads
